@@ -6,7 +6,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9',
+  'BwpC35pt4Wr3PtqBNuqWXANQCBSrfBbF1gQtcr74bMs5',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -16,7 +16,7 @@ export const EXPLORER_URL = 'https://explorer.gamba.so'
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.01 // 1% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.05 // 1% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1%
@@ -40,7 +40,7 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  */
 export const POOLS = [
   // Fake token:
-  lp(FAKE_TOKEN_MINT),
+  // lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
@@ -58,15 +58,15 @@ export const DEFAULT_POOL = POOLS[0]
  * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
-  {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
-    baseWager: 1e9,
-    decimals: 9,
-    usdPrice: 0,
-  },
+  // {
+  //   mint: FAKE_TOKEN_MINT,
+  //   name: 'Fake',
+  //   symbol: 'FAKE',
+  //   image: '/fakemoney.png',
+  //   baseWager: 1e9,
+  //   decimals: 9,
+  //   usdPrice: 0,
+  // },
   {
     mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
     name: 'W',
