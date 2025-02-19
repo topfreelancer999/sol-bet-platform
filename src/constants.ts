@@ -6,7 +6,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'BwpC35pt4Wr3PtqBNuqWXANQCBSrfBbF1gQtcr74bMs5',
+  '8VTgPRLspDr4SRfjTz7x1dYD6ECsmtAjhfQXeiG3vfhY',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -16,7 +16,7 @@ export const EXPLORER_URL = 'https://explorer.gamba.so'
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.05 // 1% !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.02 // 1% !!max 5%!!
 
 // Jackpot fee (in %)
 export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1%
